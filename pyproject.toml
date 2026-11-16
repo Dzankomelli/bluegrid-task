@@ -6,8 +6,8 @@ build-backend = "setuptools.build_meta"
 name = "forecast"
 version = "0.1.0"
 description = "Day-ahead forecast of the 24 hourly values of A from N_1 and N_2"
-# Lowest Python the pinned versions below support; developed on 3.14.
-requires-python = ">=3.12"
+# Developed and tested on 3.14 only.
+requires-python = ">=3.14"
 # Pinned to the versions the reported results were produced with.
 dependencies = [
     "numpy==2.5.4",

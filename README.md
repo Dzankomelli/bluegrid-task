@@ -1,7 +1,7 @@
 # Bluegrid Task
 
 Forecasts the 24 hourly values of A for day T from information available before
-12:11 on day T-1. The method and the results are described in [REPORT.md](REPORT.md).
+12:11 on day T-1. The method and the results are described in [REPORT.pdf](REPORT.pdf).
 
 ## How to Run this Project
 
