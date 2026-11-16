@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "forecast"
+version = "0.1.0"
+description = "Day-ahead forecast of the 24 hourly values of A from N_1 and N_2"
+# Lowest Python the pinned versions below support; developed on 3.14.
+requires-python = ">=3.12"
+# Pinned to the versions the reported results were produced with.
+dependencies = [
+    "numpy==2.5.4",
+    "pandas==3.1.1",
+    "scipy==1.18.1",
+    "scikit-learn==1.9.1",
+    "xgboost==3.4.1",
+    "matplotlib==3.11.2",
+    "tabulate==0.10.0",
+    "pytest==9.2.0",
+]
+
+[project.optional-dependencies]
+# Type checking while developing; not needed to run the pipeline or the tests.
+dev = [
+    "pyright==1.1.414",
+    "pandas-stubs==3.1.0.261029",
+]
+
+[tool.setuptools]
+packages = ["forecast"]
